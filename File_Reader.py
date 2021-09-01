@@ -44,6 +44,7 @@ def load_graph(file_name):
 def get_cluster(file_name, idx=-2):
 
     file_name = os.getcwd()+file_name
+    # print('filename in get_cluster: '+file_name)
     G = load_graph(file_name)
     G.vs["name"] = list(range(G.vcount())) # naming each node to be 0, 1, 2, ...
     if idx == -2:
@@ -73,7 +74,8 @@ def get_cluster(file_name, idx=-2):
 
 
 def save_sparse_csr(filename, array):
-
+    filename = os.getcwd()+filename
+    # print('filename in get_cluster: '+filename)
     np.savez(filename, data=array.data, row=array.row, col=array.col, shape=array.shape)
 
 
