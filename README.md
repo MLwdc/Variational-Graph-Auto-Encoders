@@ -1,3 +1,6 @@
+# Wdc editing:
+I will try to modify code based on this repo to make it happen. 20210901
+
 # Variational-Graph-Auto-Encoders
 This is the implementation of paper "Variational Graph Auto-Encoders", which is published in NIPS 2016 Workshop.
 
