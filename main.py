@@ -16,10 +16,10 @@ import File_Reader
 parser = argparse.ArgumentParser(description='')
 
 parser.add_argument('--dataset_dir', dest='dataset_dir', default='/data', help='path of the dataset')
-parser.add_argument('--dataset_name', dest='dataset_name', default='citation', help='name of the dataset')
+parser.add_argument('--dataset_name', dest='dataset_name', default='citation', help='name of the dataset')#facebook
 parser.add_argument('--result_dir', dest='result_dir', default='./result', help='result of the model testing')
 parser.add_argument('--n_hidden', dest='n_hidden', type=int, default=200, help='dimension of hidden layer')
-parser.add_argument('--n_embedding', dest='n_embedding', type=int, default=10, help='dimension of latent space')
+parser.add_argument('--n_embedding', dest='n_embedding', type=int, default=2, help='dimension of latent space')
 parser.add_argument('--dropout', dest='dropout', type=bool, default=True, help='Using dropout in training')
 parser.add_argument('--keep_prob', dest='keep_prob', type=float, default=0.5, help='prob of keeping activitation nodes')
 parser.add_argument('--learning_rate', dest='learning_rate', type=float, default=0.05, help='initial learning rate')
